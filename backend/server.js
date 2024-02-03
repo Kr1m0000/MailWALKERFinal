@@ -65,7 +65,7 @@ const server = app.listen(process.env.PORT, () => {
 const io = require("socket.io")(server, { //initialise Socket.IO sur le serveur HTTP
     pingTimeout: 60000, // délai d'attente de ping de 60 secondes et autorise les requêtes CORS provenant de "http://localhost:3000"
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://mailwalker.vercel.app",
         methods: ["GET", "POST"],
     },
 });
