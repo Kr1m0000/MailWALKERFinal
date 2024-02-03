@@ -1,0 +1,418 @@
+
+.box {
+    margin-left: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.search-bara {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b1b1b1;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 60%;
+
+            margin-left: 20px;
+        
+}
+
+.search-buttona {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f5f6fa;
+}
+
+.search-icon {
+    font-size: 23px;
+    color: #111;
+}
+
+.search-inputa {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 10px;
+    color: #f5f6fa;
+    width: 90%;
+
+}
+
+@media (max-width: 600px) {
+    .search-inputa {
+        width: 100%;
+    }
+}
+
+.responsive-logo {
+    width: 100%;
+    max-width: 160px;
+    margin-left: 35px;
+}
+
+@media (max-width: 600px) {
+    .responsive-logo {
+        display: none;
+    }
+}
+
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    background-color: #afafaf;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.user-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pseudo {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.online {
+    display: flex;
+    align-items: center;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.online .online {
+    background-color: green;
+}
+
+.online .offline {
+    background-color: red;
+}
+
+.aucun {
+    text-align: center;
+    color: red;
+}
+
+
+.user-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100%;
+    /* Ajoutez une marge à droite pour un peu d'espace entre l'image et le pseudo */
+}
+.user-box .user-info {
+    display: flex;
+    align-items: center;
+}
+.pseudo{
+    padding-right: 110px;
+    
+}
+
+/*chat.css*/
+.chat-container {
+    width: 100%;
+    height: 89vh;
+    max-width: 500px;/**taille de la box chat**/
+    margin: 0 auto;
+    padding-top: '50px';
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+}
+
+.chat-header {
+    width: 100%;
+    background-color: 'primary';
+    padding: 12px;
+    text-align: center;
+}
+
+.status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status.online {
+    background-color: green;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.status.offline {
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.messages {
+    margin-bottom: 17px; 
+       
+
+}
+
+.time {
+    font-size: 0.8em;
+    color: #888;
+}
+
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.file-button,
+.mic-button,
+.send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.file-button:hover,
+.mic-button:hover,
+.send-button:hover {
+    color: #007BFF;
+}
+
+.souheader{
+    padding: 10px;
+    text-align: center;
+}
+
+
+/**groupchat.css**/
+.modala {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenta {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-headera {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-close-buttona {
+    padding: 10px 20px;
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close-buttona:hover {
+    background-color: #e63946;
+}
+
+.modal-bodya {
+    margin-bottom: 10px;
+}
+
+.form-controla {
+    margin-bottom: 10px;
+}
+
+.form-controla input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.scrollable-content {
+    overflow-y: auto;
+    max-height: 200px;
+    /* Ajustez cette valeur en fonction de vos besoins */
+}
+.selected-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.modal-footera {
+    text-align: right;
+}
+
+.modal-footera button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footera button:hover {
+    background-color: #0056b3;
+}
+
+/*fech files*/
+
+.drawer {
+    position: fixed;
+    top: 63px;
+    right: 0;
+    width: 309px;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background-color: #f5F5F5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+}
+.drawer-header{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #111;
+}
+
+.drawer-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.drawer-content {
+    padding: 20px;
+}
+.close-icon:hover {
+    background-color: transparent  ;
+}
+
+
+.modal-close-button-files{
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+}
+.modal-close-button-files:hover {
+    background-color: transparent;
+}
+
+.boxfiles {
+    height: 300px;
+    padding: 10px;
+    background-color: #b1b1b1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+.user-list-membres {
+   padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*audio*/
+.audio-container {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.audio-container .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

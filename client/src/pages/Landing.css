@@ -1,0 +1,708 @@
+:root {
+  --color-1: #888888;
+  --color-2: #ffd86c;
+  --color-3: rgb(0, 22, 44);
+  --color-4: #e6e5e5;
+  --black: rgb(40, 40, 40);
+  --white: rgb(255, 255, 255);
+  --shadow: rgb(219, 218, 218);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "uber", sans-serif !important;
+  }
+  ::selection {
+  background: var(--color-1);
+}
+
+a,
+a:visited {
+  color: var(--color-3);
+}
+
+input,
+textarea {
+  resize: none;
+  border-radius: 0px;
+  width: 270px;
+  font-family: var(--font-1);
+  background: var(--white);
+}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .App {
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 0rem auto;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: #f6f6f6;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+  }
+  .navbar-menu-container {
+    display: none;
+  }
+  .navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  .primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 90px;
+    padding-right: 20px;
+  
+  }
+  .navbar-cart-icon {
+    font-size: 1.15rem;
+  }
+  .primary-button:hover {
+    background-color: rgb(234, 234, 234);
+  }
+  .navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+  }
+  .home-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  .home-image-section {
+    max-width: 600px;
+    flex: 1;
+  }
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .primary-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: "uber";
+    color: #2b2b2b;
+    /* line-height: 5rem; */
+    max-width: 600px;
+  }
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+  }
+  .orange-text {
+    color: orange;
+  }
+  .secondary-button {
+    padding: 1rem 2rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondary-button svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .secondary-button:hover {
+    background-color: #e48f0f;
+  }
+
+
+  .about-section-container {
+    margin-top: 20rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-background-image-container {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+  }
+  .about-section-image-container {
+    flex: 0.9;
+    margin-right: 1rem;
+  }
+  .about-section-text-container {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .primary-subheading {
+    font-weight: 700;
+    color: #fe9e0d;
+    font-size: 1.15rem;
+  }
+  .about-buttons-container {
+    margin-top: 2rem;
+    display: flex;
+  }
+  .watch-video-button {
+    margin-left: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #484848;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .watch-video-button svg {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .contact-page-wrapper h1 {
+    max-width: 900px !important;
+  }
+  .contact-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6rem 0rem;
+  }
+ 
+  .contact-form-container {
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    width: 100%;
+    height: 65px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5rem;
+  }
+  .contact1-form-container {
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    width: 100%;
+    height: 80px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5rem;
+  }
+  .contact-form-container input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+
+  }
+  
+  .footer-wrapper {
+    margin: 6rem 0rem;
+    display: flex;
+    margin-top: 10rem;
+  }
+  .footer-logo-container {
+    max-width: 110px;
+  }
+  .footer-icons {
+    margin-top: 2.5rem;
+  }
+  .footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #585858;
+  }
+  /* .footer-section-one {
+    border: 2px solid blue;
+  } */
+  .footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+  }
+  .footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: #4c4c4c;
+    cursor: pointer;
+  }
+  .testimonial-section-bottom {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    border-radius: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-section-bottom {
+    margin: 2rem auto;
+  }
+  .testimonial-section-bottom p {
+    font-weight: 700;
+    color: #515151;
+    max-width: 500px;
+    font-size: 1.1rem;
+    margin: 2rem 0rem;
+  }
+  .testimonials-stars-container svg {
+    margin: 0rem 0.25rem;
+    font-size: 1.5rem;
+    color: #fe9e0d;
+  }
+  .testimonial-section-bottom h2 {
+    margin-top: 1.5rem;
+  }
+  .work-section-wrapper {
+    margin-top: 15rem;
+  }
+  .work-section-top p {
+    text-align: center;
+    max-width: 600px !important;
+  }
+  .work-section-top h1 {
+    max-width: 700px !important;
+  }
+  .work-section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .work-section-info {
+    width: 290px;
+    min-height: 350px;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: #505050;
+    margin: 1rem 2rem;
+  }
+  .work-section-info h2 {
+    margin: 1rem 0rem;
+  }
+  .work-section-bottom {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .work-section-info p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1000px) {
+    .navbar-links-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    .primary-button {
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    .home-bannerImage-container {
+      max-width: 600px;
+    }
+  }
+  @media (max-width: 800px) {
+    .nav-logo-container {
+      max-width: 140px;
+    }
+    .navbar-links-container {
+      display: none;
+    }
+    .navbar-menu-container {
+      display: flex;
+    }
+    .home-bannerImage-container {
+      max-width: 450px;
+    }
+    .home-banner-container,
+    .about-section-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-section-container {
+      flex-direction: column;
+    }
+    .home-image-section,
+    .about-section-image-container {
+      width: 100%;
+      max-width: 400px;
+    }
+    .primary-heading {
+      text-align: center;
+      max-width: 90%;
+    }
+    .primary-text {
+      text-align: center;
+      max-width: 80%;
+    }
+    
+    .home-text-section,
+    .about-section-text-container {
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    .secondary-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .about-section-container {
+      margin-top: 5rem !important;
+    }
+    .about-buttons-container {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .primary-subheading {
+      text-align: center;
+    }
+    .watch-video-button {
+      margin-left: 0rem !important;
+      margin-top: 1rem;
+      font-size: 1rem !important;
+    }
+    .watch-video-button svg {
+      margin-right: 0.5rem !important;
+    }
+    .about-section-image-container {
+      margin-right: 0rem !important;
+    }
+    .work-section-wrapper {
+      margin-top: 5rem !important;
+    }
+    .work-section-bottom {
+      margin-top: 1rem !important;
+    }
+    .contact-form-container {
+      padding: 0.5rem !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem !important;
+    }
+    .contact-form-container input {
+      font-size: 1rem !important;
+      max-width: 100%;
+      padding: 0.5rem 1rem !important;
+      margin-bottom: 0.8rem !important;
+      text-align: center;
+    }
+    .footer-wrapper {
+      flex-direction: column;
+    }
+    .footer-section-two {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .footer-section-columns {
+      margin: 1rem 0rem;
+    }
+    .App {
+      max-width: 95vw;
+    }
+  }
+  @font-face {
+    font-family: 'uber';
+    src: url('../Assets/UberMoveMedium.otf') format('woff2'),
+         url('../Assets/UberMoveBold.otf') format('woff');
+    /* Add more font formats if necessary */
+  }
+  @media (max-width: 600px) {
+    .home-bannerImage-container,
+    .about-background-image-container {
+      display: none;
+    }
+  }
+
+
+  /* Ce que j'ai rajouté */
+
+/* Style pour le conteneur de la case à cocher */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 16px; 
+}
+
+/*  l'élément de saisie de la case à cocher */
+.checkbox-container input[type="checkbox"] {
+  box-shadow: none; 
+  width: 40px;
+  margin-left: 20px; 
+}
+
+/*  l'étiquette et le lien associé à la case à cocher */
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color:#010101;
+}
+
+.checkbox-container label a {
+  margin-left: 3px; 
+  color: #007bff; 
+  text-decoration: none;
+}
+
+.checkbox-container label a:hover {
+  text-decoration: underline; /* Souligner le lien */
+}
+
+.form-container {
+  width: 450px; 
+  max-width: 100%;
+ 
+  margin: 60px auto 0 90px;
+  padding: 15px;
+  background-color: #DBDADA;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+}
+/* Personnalisation du curseur vertical */
+.form-container::-webkit-scrollbar {
+  width: 10px; /* Largeur du curseur  */
+}
+
+.form-container::-webkit-scrollbar-track {
+  background:rgb(255, 255, 255); 
+}
+
+.form-container::-webkit-scrollbar-thumb {
+  background: #a9a9a9; 
+  border-radius: 5px; 
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+  background:#fe9e0d 
+}
+
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    margin: 100px auto 0;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    width: 80%;
+    margin: 100px auto 0;
+    padding: 10px;
+  }
+}
+
+
+.form-container label {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px; 
+  margin-top: 10px;
+}
+
+
+/* les onglets de navigation (SInscrire et Seconnecter) */
+.form-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.form-container li {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px; /* l'espacement entre les deux boutons */
+}
+
+/* REGISTER  QUI EST EN HAUT EST EN GRAS  */
+.form-container li#register {
+  font-weight: bold;
+}
+
+/* LOGIN QUI EST EN HAUT EST EN GRAS  */
+.form-container li#login {
+  font-weight: bold;
+}
+
+.form-container li:hover {
+  background-color: #c4c4c4; 
+  border-radius: 25px;
+}
+
+/*  le bouton actif */
+.form-container .active-btn {
+  background-color:  #fe9e0d;
+  color: #fff; 
+  border-radius: 25px;
+}
+
+/*  le message de succès */
+.success {
+  color: green;
+  font-weight: bold; 
+}
+
+/*  le message d'erreur */
+.error {
+  color: red;
+  font-weight: bold; 
+}
+.form-label-Sign {
+  display: inline-block;
+  margin-top: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-form-container {
+  text-align: center;
+  margin-top: 20px; 
+
+}
+/* OU OL Y'as general information et tt ok */
+.hint {
+  font-weight: bolder;
+  margin-top: 5px;
+  text-align: center; /* texte  au centee*/
+  color:#fe9e0d;
+}
+
+.forgot-password-link {
+  color: #007bff; 
+ 
+}
+/*POUR CENTRER VALIDATE ET LOGIN OK */
+.secondary-button-center{
+  padding: 1rem 2rem;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; 
+}
+
+.secondary-button-center svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.secondary-button-center:hover {
+  background-color: #e48f0f;
+}
+
+.secondary-button-center-resetpassword{
+  padding: 1rem 2rem;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; 
+}
+.secondary-button-center-resetpassword svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.secondary-button-center-resetpassword:hover {
+  background-color: #e48f0f;
+}
