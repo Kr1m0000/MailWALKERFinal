@@ -60,7 +60,7 @@ const ViewEmailg = ({ openDrawer }) => {
     const fetchEmailDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/gmail/mail/read/mailwalker.testapi@gmail.com/${email.id}`
+          `https://mailwalker.onrender.com/api/gmail/mail/read/mailwalker.testapi@gmail.com/${email.id}`
         );
         setEmailDetails(response.data);
       } catch (error) {
